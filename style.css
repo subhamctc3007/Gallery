@@ -12,6 +12,14 @@ body{
 .container{
     margin: 50px;
 }
+.heading{
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+    border: 10px;
+    border-color: aliceblue;
+    border-radius: 10px;
+}
 .row{
     width: 100%;
     display: flex;
@@ -32,6 +40,13 @@ body{
 .image img{
     max-width: 400px;
     transition: 0.25s;
+}
+.long{
+    max-height: 450px;
+    width: fit-content;
+}
+.long img{
+    max-height: 450px;
 }
 .image:hover{
     border-radius: 0;
@@ -67,6 +82,29 @@ body{
     opacity: 1;
     transform: translateY(-30px);
 }
+.button{
+    text-align: center;
+}
+button{
+    color: aliceblue;
+    font-size: 20px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 18px;
+    background-color: rgb(0, 144, 144);
+}
+button:hover{
+    background-color: rgb(0, 85, 85);
+}
+footer{
+    text-align: center;
+    background-color: rgb(0, 144, 144);
+    color: aliceblue;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
 
 @media screen and (max-width:1150px){
     .image{
@@ -76,7 +114,7 @@ body{
 }
 @media screen and (max-width:560px){
     .container{
-        margin: 20px;
+        margin: 0px;
     }
     .image{
         flex: 100%;
@@ -86,5 +124,19 @@ body{
     }
     .image img{
         max-height: 200px;
+    }
+    .image .details h2{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+    .image .details p{
+        font-size: 12px;
+        margin: 45px 30px 30px 30px;
+    }
+}
+@media screen and (max-width:400px){
+    .image{
+        margin: 15px 10px;
     }
 }
