@@ -15,10 +15,13 @@ nav{
     padding: 20px;
     display: flex;
 }
-.home{
-    margin: 0px 30px 0px 50px;
+nav .pages{
+    margin: 0px 10px;
 }
-.pages a{
+nav .home{
+    margin-left: 50px;
+}
+nav .pages a{
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
@@ -26,9 +29,12 @@ nav{
     border-radius: 10px;
     padding: 5px 7px;
 }
-.pages a:hover{
+nav .pages a:hover{
     background-color: aliceblue;
     color: black;
+}
+nav .gallery a{
+    color: rgb(0, 144, 144);
 }
 .container{
     margin: 50px;
